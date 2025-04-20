@@ -30,7 +30,8 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 
 - [ ] Workflow
 
- 
+- [ ] Tela de detalhes ao clicar em um produto
+      
 
 ## Protótipos de tela: 
 
