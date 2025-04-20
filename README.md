@@ -35,8 +35,13 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 
 ## Protótipos de tela: 
 
+https://www.figma.com/design/eT8yitBxfFd9F4buGciMga/Untitled?node-id=1-324&t=msGYTCIQAWKEQyeC-1
+
 ## Modelagem do banco
 
+O aplicativo consome dados da Fake Store API. Abaixo está o diagrama de entidade-relacionamento representando a estrutura dos dados manipulados:
+
+https://drive.google.com/file/d/15yghLZ_wvNk8g4jpGxhGgXpd22GJkXP9/view?usp=sharing
 
 ## Planejamento de sprints: 
 
