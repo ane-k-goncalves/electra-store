@@ -40,35 +40,35 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 ## Planejamento de sprints: 
 
 ### Sprint 1 (Semana 1)
- Definição do tema e funcionalidades do app
+- [ ] Definição do tema e funcionalidades do app
 
- Criação do repositório e setup inicial com Expo
+- [ ] Criação do repositório e setup inicial com Expo
 
- Criação do protótipo no Figma
+- [ ] Criação do protótipo no Figma
 
- Modelagem do banco baseada na API
+- [ ] Modelagem do banco baseada na API
 
- Estrutura do README
+- [ ] Estrutura do README
 
 ### Sprint 2 (Semana 2)
- Tela inicial com título e descrição
+- [ ] Tela inicial com título e descrição
 
- Consumo da API de produtos eletrônicos
+- [ ] Consumo da API de produtos eletrônicos
 
- Exibição de cards com imagem, nome e preço
+- [ ] Exibição de cards com imagem, nome e preço
 
 ### Sprint 3 (Semana 3)
- Implementar navegação entre telas
+- [ ] Implementar navegação entre telas
 
- Criar tela de detalhes do produto
+- [ ] Criar tela de detalhes do produto
 
- Adicionar loader e tratamento de erros
+- [ ] Adicionar loader e tratamento de erros
 
 ### Sprint 4 (Semana 4)
- Implementar funcionalidades adicionais (ex: favoritos, busca)
+- [ ] Implementar funcionalidades adicionais (ex: favoritos, busca)
 
- Melhorias visuais (tema escuro, animações)
+- [ ] Melhorias visuais (tema escuro, animações)
 
- Testes finais e ajustes
+- [ ] Testes finais e ajustes
 
-## Planejamento de sprints: 
+
