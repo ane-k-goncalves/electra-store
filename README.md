@@ -8,32 +8,67 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 
 - [ ] Tela inicial com título e descrição do app
 
-[ ] Consumo da API https://fakestoreapi.com/products/category/electronics
+- [ ] Consumo da API https://fakestoreapi.com/products/category/electronics
 
-[ ] Listagem dos produtos eletrônicos com imagem, título e preço
+- [ ] Listagem dos produtos eletrônicos com imagem, título e preço
 
-[ ] Layout responsivo com estilo agradável
+- [ ] Layout responsivo com estilo agradável
 
-[ ] Sistema de navegação entre telas (EXPO ROUTER)
+- [ ] Sistema de navegação entre telas (EXPO ROUTER)
 
-[ ] Tela de detalhes do produto (ao clicar em um item da lista)
+- [ ] Tela de detalhes do produto (ao clicar em um item da lista)
 
-[ ] Tratamento de erros na requisição da API
+- [ ] Tratamento de erros na requisição da API
 
-[ ] Filtro por categorias
+- [ ] Filtro por categorias
 
-[ ] Tela de favoritos ou "lista de desejos"
+- [ ] Tela de favoritos ou "lista de desejos"
 
-[ ] Tema escuro/claro 
+- [ ] Tema escuro/claro 
 
-[ ]  Armazenamento local de dados
+- [ ]  Armazenamento local de dados
 
-[ ] Workflow
+- [ ] Workflow
 
  
 
 ## Protótipos de tela: 
 
 ## Modelagem do banco
+
+
+## Planejamento de sprints: 
+
+### Sprint 1 (Semana 1)
+ Definição do tema e funcionalidades do app
+
+ Criação do repositório e setup inicial com Expo
+
+ Criação do protótipo no Figma
+
+ Modelagem do banco baseada na API
+
+ Estrutura do README
+
+### Sprint 2 (Semana 2)
+ Tela inicial com título e descrição
+
+ Consumo da API de produtos eletrônicos
+
+ Exibição de cards com imagem, nome e preço
+
+### Sprint 3 (Semana 3)
+ Implementar navegação entre telas
+
+ Criar tela de detalhes do produto
+
+ Adicionar loader e tratamento de erros
+
+### Sprint 4 (Semana 4)
+ Implementar funcionalidades adicionais (ex: favoritos, busca)
+
+ Melhorias visuais (tema escuro, animações)
+
+ Testes finais e ajustes
 
 ## Planejamento de sprints: 
