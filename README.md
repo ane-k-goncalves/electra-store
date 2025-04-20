@@ -6,7 +6,7 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 
 ### Checkpoint
 
-[ ] Tela inicial com título e descrição do app
+- [ ] Tela inicial com título e descrição do app
 
 [ ] Consumo da API https://fakestoreapi.com/products/category/electronics
 
