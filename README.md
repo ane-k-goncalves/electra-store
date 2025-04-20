@@ -41,7 +41,7 @@ https://www.figma.com/design/eT8yitBxfFd9F4buGciMga/Untitled?node-id=1-324&t=msG
 
 O aplicativo consome dados da Fake Store API. Abaixo está o diagrama de entidade-relacionamento representando a estrutura dos dados manipulados:
 
-https://drive.google.com/file/d/15yghLZ_wvNk8g4jpGxhGgXpd22GJkXP9/view?usp=sharing
+https://drive.google.com/file/d/1lXAbbA4FzE01QoedFyS9kq16gPI_PXmb/view?usp=sharing
 
 ## Planejamento de sprints: 
 
