@@ -1,10 +1,43 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, TextInput, Button, Alert, Pressable } from "react-native";
+import React from "react";
+import { useRouter } from "expo-router";
 
 export default function login() {
+  const [text, onChangeText] = React.useState("");
+  const [number, onChangeNumber] = React.useState("");
+   const router = useRouter();
+
   return (
-    <View>
-      <Text>login</Text>
+    <View className="flex-1 flex-col justify-center items-center bg-[#030622]">
+      <TextInput
+        className="border border-[#5A5858] rounded-md m-4 w-96"
+        onChangeText={onChangeText}
+        value={text}
+        placeholder="Nome"
+        placeholderTextColor="#fff"
+      />
+      <TextInput
+        className="border border-[#5A5858] rounded-md m-4 w-96 "
+        onChangeText={onChangeNumber}
+        value={number}
+        placeholder="Senha"
+        placeholderTextColor="#fff"
+        secureTextEntry
+      />
+
+      <Pressable
+        className="bg-black m-2 py-3 w-44 p-4 rounded-md"
+        onPress={() => Alert.alert("Entrar pressionado")}
+      >
+        <Text className="text-white text-left font-bold">Entrar</Text>
+      </Pressable>
+
+      <Pressable
+        className="bg-black m-2 py-3 w-44 p-4 rounded-md"
+        onPress={() => router.push("/cadastro")}
+      >
+        <Text className="text-white text-left font-bold">Cadastrar-se</Text>
+      </Pressable>
     </View>
-  )
+  );
 }
