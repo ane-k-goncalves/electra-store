@@ -1,11 +1,19 @@
 import { View, Text, TextInput, Button, Alert, Pressable } from "react-native";
 import React from "react";
 import { useRouter } from "expo-router";
+import { handleError } from "vue";
+import { useAuth } from "../src/contexts/AuthContext";
 
 export default function login() {
   const [text, onChangeText] = React.useState("");
   const [number, onChangeNumber] = React.useState("");
    const router = useRouter();
+   const { login } = useAuth();
+
+  const handleLogin = () => {
+    login({name: "ane", senha:"123"});
+    router.replace("pages/home")
+   }
 
   return (
     <View className="flex-1 flex-col justify-center items-center bg-[#030622]">
@@ -27,7 +35,7 @@ export default function login() {
 
       <Pressable
         className="bg-black m-2 py-3 w-44 p-4 rounded-md"
-        onPress={() => Alert.alert("Entrar pressionado")}
+        onPress={handleLogin}
       >
         <Text className="text-white text-left font-bold">Entrar</Text>
       </Pressable>
