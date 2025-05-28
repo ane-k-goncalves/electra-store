@@ -46,29 +46,34 @@ https://drive.google.com/file/d/1lXAbbA4FzE01QoedFyS9kq16gPI_PXmb/view?usp=shari
 ## Planejamento de sprints: 
 
 ### Sprint 1 (Semana 1)
-- [ ] Definição do tema e funcionalidades do app
+- [x] Definição do tema e funcionalidades do app
 
-- [ ] Criação do repositório e setup inicial com Expo
+- [x] Criação do repositório e setup inicial com Expo
 
-- [ ] Criação do protótipo no Figma
+- [x] Criação do protótipo no Figma
 
-- [ ] Modelagem do banco baseada na API
+- [x] Modelagem do banco baseada na API
 
-- [ ] Estrutura do README
+- [x] Estrutura do README
 
 ### Sprint 2 (Semana 2)
-- [ ] Tela inicial com título e descrição
+- [x] Tela inicial com título e descrição
 
-- [ ] Consumo da API de produtos eletrônicos
+- [x] Implementar navegação entre telas
 
-- [ ] Exibição de cards com imagem, nome e preço
+- [x] Exibição de cards com imagem, nome e preço
 
 ### Sprint 3 (Semana 3)
-- [ ] Implementar navegação entre telas
+- [ ] Consumo da API de produtos eletrônicos
 
 - [ ] Criar tela de detalhes do produto
 
 - [ ] Adicionar loader e tratamento de erros
+
+- [ ] Otimizar components
+
+- [ ] Revisar design
+
 
 ### Sprint 4 (Semana 4)
 - [ ] Implementar funcionalidades adicionais (ex: favoritos, busca)
@@ -77,4 +82,14 @@ https://drive.google.com/file/d/1lXAbbA4FzE01QoedFyS9kq16gPI_PXmb/view?usp=shari
 
 - [ ] Testes finais e ajustes
 
+## Atualizações desde o último checkpoint
 
+- Implementado suporte completo ao Tailwind CSS via NativeWind para estilização declarativa.
+
+- Ajustes na responsividade e alinhamento dos elementos com Tailwind nas telas de produtos e no componente Header.
+
+- Integração com o contexto de autenticação (useAuth) para controle de login e logout.
+
+## Vídeo
+
+https://drive.google.com/file/d/1WtPue4vDarsIkjFyCQf5nuztCg4TmLGx/view?usp=sharing
