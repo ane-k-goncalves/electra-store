@@ -1,35 +1,39 @@
 import { View, Text, TextInput, Button, Alert, Pressable } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "expo-router";
 import { handleError } from "vue";
 import { useAuth } from "../src/contexts/AuthContext";
 
 export default function login() {
-  const [text, onChangeText] = React.useState("");
-  const [number, onChangeNumber] = React.useState("");
-   const router = useRouter();
-   const { login } = useAuth();
+  const [name, setName] = useState("");
+  const [senha, setSenha] = useState("");
+
+  const router = useRouter();
+  const { login } = useAuth();
 
   const handleLogin = () => {
-    login({name: "ane", senha:"123"});
-    router.replace("pages/home")
-   }
+    if (name && senha) {
+      login({ name, senha });
+      router.replace("pages/home");
+    }
+  };
 
   return (
     <View className="flex-1 flex-col justify-center items-center bg-[#030622]">
       <TextInput
         className="border border-[#5A5858] rounded-md m-4 w-96"
-        onChangeText={onChangeText}
-        value={text}
+        onChangeText={setName}
+        value={name}
         placeholder="Nome"
         placeholderTextColor="#fff"
       />
       <TextInput
         className="border border-[#5A5858] rounded-md m-4 w-96 "
-        onChangeText={onChangeNumber}
-        value={number}
+        onChangeText={setSenha}
+        value={senha}
         placeholder="Senha"
         placeholderTextColor="#fff"
+
         secureTextEntry
       />
 

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Notebook Dell Inspiron",
+    "price": 3499.99,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+  },
+  {
+    "id": "2",
+    "name": "Smartphone Galaxy S22",
+    "price": 3999.90,
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+  },
+  {
+    "id": "3",
+    "name": "Fone Bluetooth JBL",
+    "price": 299.99,
+    "image": "https://images.unsplash.com/photo-1585386959984-a4155228f0d2"
+  },
+  {
+    "id": "4",
+    "name": "Monitor 27\" LG",
+    "price": 1199.00,
+    "image": "https://images.unsplash.com/photo-1587202372775-b121b249e9a9"
+  },
+  {
+    "id": "5",
+    "name": "Teclado Mecânico Redragon",
+    "price": 249.90,
+    "image": "https://images.unsplash.com/photo-1608224891942-260cb2ebd82f"
+  },
+  {
+    "id": "6",
+    "name": "Mouse Gamer Logitech",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+  }
+]

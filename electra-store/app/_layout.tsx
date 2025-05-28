@@ -4,6 +4,7 @@ import { Stack } from "expo-router";
 import "../global.css";
 import { AuthProvider } from "../src/contexts/AuthContext";
 import Header from "../src/components/header";
+import { Icon } from "@rneui/base";
 
 export default function _layout() {
   return (
@@ -30,12 +31,36 @@ export default function _layout() {
             headerTintColor: "#fff",
           }}
         />
-        <Stack.Screen name="pages/home" options={{ 
-             title: "",
-          headerLeft: () => <Header />,
+        <Stack.Screen
+          name="pages/home"
+          options={{
+            title: "",
+            headerLeft: () => <Header />,
             headerStyle: {
               backgroundColor: "#030622",
-            }, }} />
+            },
+          }}
+        />
+        <Stack.Screen
+          name="pages/perfil"
+          options={{
+            title: "",
+            headerLeft: () => <Header />,
+            headerStyle: {
+              backgroundColor: "#030622",
+            },
+          }}
+        />
+        <Stack.Screen
+          name="pages/carrinho"
+          options={{
+            title: "",
+            headerLeft: () => <Header />,
+            headerStyle: {
+              backgroundColor: "#030622",
+            },
+          }}
+        />
       </Stack>
     </AuthProvider>
   );
