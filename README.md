@@ -6,17 +6,15 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 
 ### Checkpoint
 
-- [ ] Tela inicial com título e descrição do app
+- [x] Tela inicial com título e descrição do app
 
 - [ ] Consumo da API https://fakestoreapi.com/products/category/electronics
 
-- [ ] Listagem dos produtos eletrônicos com imagem, título e preço
+- [x] Listagem dos produtos eletrônicos com imagem, título e preço
 
 - [ ] Layout responsivo com estilo agradável
 
-- [ ] Sistema de navegação entre telas (EXPO ROUTER)
-
-- [ ] Tela de detalhes do produto (ao clicar em um item da lista)
+- [x] Sistema de navegação entre telas (EXPO ROUTER)
 
 - [ ] Tratamento de erros na requisição da API
 
@@ -28,7 +26,7 @@ Este projeto tem como objetivo principal a prática de consumo de APIs REST em a
 
 - [ ]  Armazenamento local de dados
 
-- [ ] Workflow
+- [x] Workflow
 
 - [ ] Tela de detalhes ao clicar em um produto
       
