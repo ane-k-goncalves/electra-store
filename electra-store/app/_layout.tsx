@@ -3,12 +3,14 @@ import React from "react";
 import { Stack } from "expo-router";
 import "../global.css";
 import { AuthProvider } from "../src/contexts/AuthContext";
-import Header from "../src/components/header";
+import Header from "../src/components/Header";
 import { Icon } from "@rneui/base";
+import { FavoritesProvider } from "../src/contexts/FavoriteContext";
 
 export default function _layout() {
   return (
     <AuthProvider>
+      <FavoritesProvider>
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen
@@ -61,7 +63,19 @@ export default function _layout() {
             },
           }}
         />
+         <Stack.Screen
+          name="pages/favoritos"
+          options={{
+            title: "",
+            headerLeft: () => <Header />,
+            headerStyle: {
+              backgroundColor: "#030622",
+            },
+          }}
+        />
+        
       </Stack>
+      </FavoritesProvider>
     </AuthProvider>
   );
 }

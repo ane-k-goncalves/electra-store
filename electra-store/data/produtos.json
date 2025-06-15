@@ -1,38 +1,345 @@
 [
   {
-    "id": "1",
-    "name": "Notebook Dell Inspiron",
+    "id": 1,
+    "title": "iPhone 14 Pro Max",
+    "price": 5999.99,
+    "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 2,
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 5499.99,
+    "image": "https://m.media-amazon.com/images/I/71S8U9VzLTL._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 3,
+    "title": "Google Pixel 7 Pro",
+    "price": 4299.99,
+    "image": "https://m.media-amazon.com/images/I/61nPiOOv9BL._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 4,
+    "title": "Xiaomi 13 Pro",
+    "price": 3999.99,
+    "image": "https://m.media-amazon.com/images/I/71TA3uyxGEL._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 5,
+    "title": "OnePlus 11",
+    "price": 3799.99,
+    "image": "https://m.media-amazon.com/images/I/71KxA5bS8-L._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 6,
+    "title": "Motorola Edge 30 Ultra",
+    "price": 3599.99,
+    "image": "https://m.media-amazon.com/images/I/61sVRMHZpML._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 7,
+    "title": "Asus ROG Phone 6",
+    "price": 4999.99,
+    "image": "https://m.media-amazon.com/images/I/61TnX0PmqES._AC_SL1500_.jpg",
+    "category": "Smartphones"
+  },
+  {
+    "id": 8,
+    "title": "MacBook Pro 16 M3",
+    "price": 12999.99,
+    "image": "https://m.media-amazon.com/images/I/71bElkQQ9LL._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 9,
+    "title": "Dell XPS 15",
+    "price": 8999.99,
+    "image": "https://m.media-amazon.com/images/I/71TgZyzGeaL._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 10,
+    "title": "Asus ROG Strix G16",
+    "price": 7999.99,
+    "image": "https://m.media-amazon.com/images/I/81GqtNbs+PL._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 11,
+    "title": "Lenovo Legion 5",
+    "price": 6999.99,
+    "image": "https://m.media-amazon.com/images/I/81k7FFlu8-L._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 12,
+    "title": "HP Spectre x360",
+    "price": 7499.99,
+    "image": "https://m.media-amazon.com/images/I/81W+j4XQ6PL._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 13,
+    "title": "MSI Katana GF66",
+    "price": 6599.99,
+    "image": "https://m.media-amazon.com/images/I/71ckxB2AbRL._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 14,
+    "title": "Acer Predator Helios 300",
+    "price": 7999.99,
+    "image": "https://m.media-amazon.com/images/I/81nPGsUAZxL._AC_SL1500_.jpg",
+    "category": "Laptops"
+  },
+  {
+    "id": 15,
+    "title": "Dell Inspiron Desktop",
+    "price": 3599.99,
+    "image": "https://m.media-amazon.com/images/I/81cXj2o-SzL._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 16,
+    "title": "HP Pavilion Gaming Desktop",
+    "price": 3999.99,
+    "image": "https://m.media-amazon.com/images/I/81qwlAWR-2L._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 17,
+    "title": "Lenovo IdeaCentre",
+    "price": 2999.99,
+    "image": "https://m.media-amazon.com/images/I/71DuhUr0vVL._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 18,
+    "title": "Asus ROG Strix G10",
+    "price": 4999.99,
+    "image": "https://m.media-amazon.com/images/I/81Z1FgIYjYL._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 19,
+    "title": "MSI MPG Trident 3",
+    "price": 5299.99,
+    "image": "https://m.media-amazon.com/images/I/81avHDmE2SL._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 20,
+    "title": "Apple iMac 24",
+    "price": 8499.99,
+    "image": "https://m.media-amazon.com/images/I/71ZTcc1ZWmL._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 21,
+    "title": "CyberPowerPC Gamer Xtreme",
+    "price": 5799.99,
+    "image": "https://m.media-amazon.com/images/I/81xK7uOAPOL._AC_SL1500_.jpg",
+    "category": "Desktops"
+  },
+  {
+    "id": 22,
+    "title": "NVIDIA GeForce RTX 4090",
+    "price": 14999.99,
+    "image": "https://m.media-amazon.com/images/I/71dsVYFxVXL._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 23,
+    "title": "AMD Radeon RX 7900 XTX",
+    "price": 8999.99,
+    "image": "https://m.media-amazon.com/images/I/81M-NLPVLZL._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 24,
+    "title": "NVIDIA GeForce RTX 4080",
+    "price": 9999.99,
+    "image": "https://m.media-amazon.com/images/I/71YZwFvdMwL._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 25,
+    "title": "AMD Radeon RX 7800 XT",
+    "price": 6499.99,
+    "image": "https://m.media-amazon.com/images/I/71Z4yK8nEzL._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 26,
+    "title": "NVIDIA RTX 4070 Ti",
+    "price": 7999.99,
+    "image": "https://m.media-amazon.com/images/I/71I1PqZ9DuL._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 27,
+    "title": "AMD Radeon RX 7700 XT",
+    "price": 5999.99,
+    "image": "https://m.media-amazon.com/images/I/71F7UghEKcL._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 28,
+    "title": "NVIDIA RTX 4060 Ti",
+    "price": 4999.99,
+    "image": "https://m.media-amazon.com/images/I/71k3mtuLb0L._AC_SL1500_.jpg",
+    "category": "GPUs"
+  },
+  {
+    "id": 29,
+    "title": "LG UltraGear 27\"",
+    "price": 2599.99,
+    "image": "https://m.media-amazon.com/images/I/81kB4HZZEjL._AC_SL1500_.jpg",
+    "category": "Displays"
+  },
+  {
+    "id": 30,
+    "title": "Samsung Odyssey G7",
+    "price": 2999.99,
+    "image": "https://m.media-amazon.com/images/I/71cNNnKc+DL._AC_SL1500_.jpg",
+    "category": "Displays"
+  },
+  {
+    "id": 31,
+    "title": "Dell Ultrasharp U2723QE",
     "price": 3499.99,
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+    "image": "https://m.media-amazon.com/images/I/81BCL7tQxXL._AC_SL1500_.jpg",
+    "category": "Displays"
   },
   {
-    "id": "2",
-    "name": "Smartphone Galaxy S22",
-    "price": 3999.90,
-    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    "id": 32,
+    "title": "Acer Nitro XV272U",
+    "price": 1999.99,
+    "image": "https://m.media-amazon.com/images/I/71-QH5PgG8L._AC_SL1500_.jpg",
+    "category": "Displays"
   },
   {
-    "id": "3",
-    "name": "Fone Bluetooth JBL",
-    "price": 299.99,
-    "image": "https://images.unsplash.com/photo-1585386959984-a4155228f0d2"
+    "id": 33,
+    "title": "ASUS TUF VG27AQ",
+    "price": 2199.99,
+    "image": "https://m.media-amazon.com/images/I/71eCWX4RVmL._AC_SL1500_.jpg",
+    "category": "Displays"
   },
   {
-    "id": "4",
-    "name": "Monitor 27\" LG",
-    "price": 1199.00,
-    "image": "https://images.unsplash.com/photo-1587202372775-b121b249e9a9"
+    "id": 34,
+    "title": "BenQ EX2780Q",
+    "price": 2399.99,
+    "image": "https://m.media-amazon.com/images/I/81xR2Hg84VL._AC_SL1500_.jpg",
+    "category": "Displays"
   },
   {
-    "id": "5",
-    "name": "Teclado Mecânico Redragon",
-    "price": 249.90,
-    "image": "https://images.unsplash.com/photo-1608224891942-260cb2ebd82f"
+    "id": 35,
+    "title": "Gigabyte M32U",
+    "price": 3299.99,
+    "image": "https://m.media-amazon.com/images/I/81gXTFZQdRL._AC_SL1500_.jpg",
+    "category": "Displays"
   },
   {
-    "id": "6",
-    "name": "Mouse Gamer Logitech",
-    "price": 199.99,
-    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+    "id": 36,
+    "title": "Apple iPad Pro 12.9",
+    "price": 8999.99,
+    "image": "https://m.media-amazon.com/images/I/81c+9BOQNWL._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 37,
+    "title": "Samsung Galaxy Tab S8 Ultra",
+    "price": 7999.99,
+    "image": "https://m.media-amazon.com/images/I/81W0dmb6ugL._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 38,
+    "title": "Microsoft Surface Pro 9",
+    "price": 8499.99,
+    "image": "https://m.media-amazon.com/images/I/71Ugq8AfsfL._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 39,
+    "title": "Lenovo Tab P12 Pro",
+    "price": 6299.99,
+    "image": "https://m.media-amazon.com/images/I/81uHj0WqG1L._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 40,
+    "title": "Xiaomi Pad 5",
+    "price": 2999.99,
+    "image": "https://m.media-amazon.com/images/I/71Q0bXzeHYL._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 41,
+    "title": "Amazon Fire HD 10",
+    "price": 899.99,
+    "image": "https://m.media-amazon.com/images/I/61noCznhCGL._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 42,
+    "title": "Huawei MatePad Pro",
+    "price": 4599.99,
+    "image": "https://m.media-amazon.com/images/I/71gu6pZqomL._AC_SL1500_.jpg",
+    "category": "Tablets"
+  },
+  {
+    "id": 43,
+    "title": "Apple Watch Series 9",
+    "price": 3999.99,
+    "image": "https://m.media-amazon.com/images/I/71otFo05msL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
+  },
+  {
+    "id": 44,
+    "title": "Samsung Galaxy Watch 6",
+    "price": 2999.99,
+    "image": "https://m.media-amazon.com/images/I/71cJ5eD5wZL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
+  },
+  {
+    "id": 45,
+    "title": "Garmin Venu 2 Plus",
+    "price": 2499.99,
+    "image": "https://m.media-amazon.com/images/I/71XWLO8fEOL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
+  },
+  {
+    "id": 46,
+    "title": "Amazfit GTR 4",
+    "price": 1799.99,
+    "image": "https://m.media-amazon.com/images/I/61mdFDb0IcL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
+  },
+  {
+    "id": 47,
+    "title": "Fitbit Versa 4",
+    "price": 1399.99,
+    "image": "https://m.media-amazon.com/images/I/71G0LEcZJdL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
+  },
+  {
+    "id": 48,
+    "title": "Huawei Watch GT 3",
+    "price": 2199.99,
+    "image": "https://m.media-amazon.com/images/I/71HB7i7sQXL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
+  },
+  {
+    "id": 49,
+    "title": "TicWatch Pro 5",
+    "price": 2599.99,
+    "image": "https://m.media-amazon.com/images/I/71zAyxtmPBL._AC_SL1500_.jpg",
+    "category": "Smartwatches"
   }
 ]
