@@ -1,19 +1,57 @@
-import { View, Text } from 'react-native'
-import React, { ReactNode } from 'react'
-import { Avatar } from '@rneui/base'
+import { View, Text, StyleSheet, Pressable } from "react-native";
+import React, { useEffect, useState } from "react";
+import { Avatar, Card } from "@rneui/base";
+import CategoriaSmartphone from "./CategoriaSmartphone";
+import { useRouter } from "expo-router";
+
 type Props = {
-  categoria: ReactNode;
+  onSelectCategoria: (categoria: string) => void;
 };
-export default function cardCategorias({categoria}: Props) {
+
+export default function CardCategorias({ onSelectCategoria} : Props) {
+  const [categorias, setCategorias] = useState<string[]>([
+    "Smartphones",
+    "Laptops",
+    "Desktops",
+    "GPUs",
+    "Displays",
+    "Tablets",
+    "Smartwatches",
+  ]);
+
+  const router = useRouter();
 
   return (
-      <View className='m-4 items-center'>
-          <Avatar
-            rounded
-            source={{ uri: 'https://randomuser.me/api/portraits/men/41.jpg' }}
-            size="large"
-          />
-          <Text >{categoria}</Text>
+    <View className="flex flex-wrap flex-row justify-between">
+      {categorias.map((categoria, index) => (
+        <Pressable key={index} onPress={() => onSelectCategoria(categoria)}>
+          <Card containerStyle={styles.containerStyle}>
+            <Avatar
+              rounded
+              source={{ uri: "https://randomuser.me/api/portraits/men/41.jpg" }}
+              size="medium"
+            />
+            <Card.Title style={styles.text}>{categoria}</Card.Title>
+          </Card>
+        </Pressable>
+      ))}
     </View>
-  )
+  );
 }
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 10,
+    marginBottom: 2,
+  },
+  containerStyle: {
+    borderRadius: 10,
+    width: 100,
+    height: 80,
+    marginBottom: 8,
+    margin: 10,
+    padding: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
