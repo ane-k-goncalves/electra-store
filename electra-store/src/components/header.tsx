@@ -42,7 +42,7 @@ export default function Header() {
               <Link href="/pages/carrinho"> Carrinho</Link>
             </Text>
             <Text className="mb-2 m-2 text-white">
-              <Icon name="heart" type="antdesign" color={"#fff"}  size={20} />  <Link href="/pages/favoritos">  Favoritos</Link>
+              <Icon name="heart" type="antdesign" color={"#fff"}  size={20} />  <Link href="/pages/favoritos"> Favoritos</Link>
             </Text>
             <Text className="mb-2 m-2 text-white">
               <Icon name={"book"} type="Ioicons" color={"#fff"}  size={20}/>

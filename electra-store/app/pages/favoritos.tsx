@@ -4,15 +4,16 @@ import { useFavorites } from "../../src/contexts/FavoriteContext";
 
 import CardProdutos from "../../src/components/CardProdutos";
 import { Card, Icon } from "@rneui/base";
+import { useCarrinho } from "../../src/contexts/CarrinhoContext";
 
 export default function favoritos() {
   const { favorites, removeFav } = useFavorites();
-  
+    const { carrinho, addCarrinho } = useCarrinho();
  
   if (favorites.length === 0) {
     return (
       <View className="flex-1 justify-center items-center">
-        <Text> Nenhum produto favoritado ainda </Text>
+        <Text> Nenhum produto favoritado ainda. </Text>
       </View>
     );
   }
@@ -37,7 +38,7 @@ export default function favoritos() {
                           <Icon name="heart" type="antdesign" size={20} color="#000" />
                         </TouchableOpacity>
                         
-                        <Icon name="shopping-cart" type="materialicons" />
+                       <TouchableOpacity onPress={() => { addCarrinho(item);}}>  <Icon name="shopping-cart" type="materialicons" size={20} color="#000" /></TouchableOpacity>
                       </View></Card>
         ))}
       

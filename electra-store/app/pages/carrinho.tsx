@@ -1,9 +1,14 @@
-import { View, Text, Pressable, Modal, Alert, TextInput } from "react-native";
+import { View, Text, Pressable, Modal, Alert, TextInput, ScrollView, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { CheckBox } from "@rneui/base";
+import { Card, CheckBox, Icon } from "@rneui/base";
+import { useCarrinho } from "../../src/contexts/CarrinhoContext";
+import { useFavorites } from "../../src/contexts/FavoriteContext";
 
 export default function carrinho() {
+  const { carrinho, removeCarrinho } = useCarrinho();
+  const { addFav, removeFav } = useFavorites();
+  
   const [modalVisible, setModalVisible] = useState(false);
   const [name, setName] = useState("");
   const [cpf, setCpf] = useState("");
@@ -13,8 +18,43 @@ export default function carrinho() {
   const [check3, setCheck3] = useState(false);
   const [check4, setCheck4] = useState(false);
 
+  if(carrinho.length === 0) {
+    return (
+      <View className="flex-1 justify-center items-center">
+        <Text> Nenhum produto foi adicionado ao carrinho ainda. </Text>
+      </View>
+
+    );
+  }
+
   return (
-    <SafeAreaView className="flex-1 items-center justify-center">
+    <SafeAreaView className="flex justify-between flex-row ">
+        <ScrollView >
+      {carrinho.map((item) => (
+        
+            <Card
+                      key={item.id}
+                      containerStyle={{ borderRadius: 8, width: "50%", margin: 4 }}
+                    >
+                      <Card.Image
+                        style={{ height: 100, resizeMode: "contain" }}
+                        source={{ uri: item.image }}
+                      />
+                      <Card.Title className="text-sm">{item.title}</Card.Title>
+                      <Text className="text-xs">R$ {item.price.toFixed(2)}</Text>
+                      <View className="fixed m-2 left-8 flex-row gap-8 bottom-0">
+                        <TouchableOpacity
+                          onPress={() => { addFav(item)}}
+                        >
+                          <Icon name="heart" type="antdesign" size={20} color="#000" />
+                        </TouchableOpacity>
+                        
+                        <TouchableOpacity onPress={() => { removeCarrinho(item);}}>  <Icon name="shopping-cart" type="materialicons" size={20} color="#000" /></TouchableOpacity>
+                      </View></Card>
+        ))}
+      
+    </ScrollView>
+
       <Modal
         animationType="slide"
         transparent={true}
@@ -122,7 +162,7 @@ export default function carrinho() {
         </View>
       </Modal>
       <Pressable
-        className="bg-black rounded-xl px-4 py-2 mt-4 w-[128px] h-[38px]"
+        className="bg-black rounded-xl px-4 py-2 mt-4 m-4 w-[128px] h-[38px]"
         onPress={() => setModalVisible(true)}
       >
         <Text className="text-white font-bold text-center">

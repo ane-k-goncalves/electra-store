@@ -14,20 +14,20 @@ type Product = {
  category: string;
 }
 
-export default function CategoriaSmartphone() {
+export default function CategoriaDesktops() {
   const [products, setProducts] = useState<Product[]>([]);
   const { addFav } = useFavorites();
 const { addCarrinho } = useCarrinho();
    
    useEffect(() => {
-    const smartphoneProducts = produtos
-      .filter((item) => item.category === "Smartphones")
+    const desktopsProducts = produtos
+      .filter((item) => item.category === "Desktops")
       .map((item) => ({
         ...item,
         id: Number(item.id), 
       }));
 
-    setProducts(smartphoneProducts);
+    setProducts(desktopsProducts);
   }, []);
   return (
     <SafeAreaView>
@@ -60,7 +60,7 @@ const { addCarrinho } = useCarrinho();
                   <Icon name="heart" type="antdesign" size={20} color="#000" />
                 </TouchableOpacity>
 
-                 <TouchableOpacity onPress={() => { addCarrinho(item);}}>  <Icon name="shopping-cart" type="materialicons" size={20} color="#000" /></TouchableOpacity>
+                <TouchableOpacity onPress={() => { addCarrinho(item);}}>  <Icon name="shopping-cart" type="materialicons" size={20} color="#000" /></TouchableOpacity>
               </View>
             </Card>
           )}
