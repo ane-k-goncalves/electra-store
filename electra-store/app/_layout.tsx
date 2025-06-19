@@ -3,14 +3,17 @@ import React from "react";
 import { Stack } from "expo-router";
 import "../global.css";
 import { AuthProvider } from "../src/contexts/AuthContext";
-import Header from "../src/components/Header";
 import { Icon } from "@rneui/base";
 import { FavoritesProvider } from "../src/contexts/FavoriteContext";
+import Header from "../src/components/Header";
+import CarrinhoProvider from "../src/contexts/CarrinhoContext";
+
 
 export default function _layout() {
   return (
     <AuthProvider>
       <FavoritesProvider>
+        <CarrinhoProvider>
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen
@@ -75,6 +78,7 @@ export default function _layout() {
         />
         
       </Stack>
+      </CarrinhoProvider>
       </FavoritesProvider>
     </AuthProvider>
   );

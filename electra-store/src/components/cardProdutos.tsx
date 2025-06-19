@@ -10,6 +10,7 @@ import {
 import { Card, Icon } from "@rneui/base";
 import { useFavorites } from "../contexts/FavoriteContext";
 import { useRouter } from "expo-router";
+import { useCarrinho } from "../contexts/CarrinhoContext";
 
 type Product = {
   id: number;
@@ -41,8 +42,8 @@ export default function CardProdutos() {
   }, []);
 
   
-  
 const { addFav } = useFavorites();
+const { addCarrinho } = useCarrinho();
 const router = useRouter();
 
   return (
@@ -74,8 +75,8 @@ const router = useRouter();
               >
                 <Icon name="heart" type="antdesign" size={20} color="#000" />
               </TouchableOpacity>
-              
-              <Icon name="shopping-cart" type="materialicons" />
+              <TouchableOpacity onPress={() => { addCarrinho(item);}}>  <Icon name="shopping-cart" type="materialicons" size={20} color="#000" /></TouchableOpacity>
+            
             </View>
           </Card>
         )}

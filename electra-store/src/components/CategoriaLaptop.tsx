@@ -14,20 +14,20 @@ type Product = {
  category: string;
 }
 
-export default function CategoriaSmartphone() {
+export default function CategoriaLaptop() {
   const [products, setProducts] = useState<Product[]>([]);
   const { addFav } = useFavorites();
 const { addCarrinho } = useCarrinho();
    
    useEffect(() => {
-    const smartphoneProducts = produtos
-      .filter((item) => item.category === "Smartphones")
+    const laptopProducts = produtos
+      .filter((item) => item.category === "Laptops")
       .map((item) => ({
         ...item,
         id: Number(item.id), 
       }));
 
-    setProducts(smartphoneProducts);
+    setProducts(laptopProducts);
   }, []);
   return (
     <SafeAreaView>

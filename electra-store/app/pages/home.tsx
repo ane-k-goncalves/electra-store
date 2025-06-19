@@ -1,4 +1,10 @@
-import { View, Text, ScrollView, SafeAreaView, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  SafeAreaView,
+  TouchableOpacity,
+} from "react-native";
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../../src/contexts/AuthContext";
 import { useRouter } from "expo-router";
@@ -6,11 +12,18 @@ import { Divider } from "@rneui/themed";
 import CardProdutos from "../../src/components/CardProdutos";
 import CardCategorias from "../../src/components/CardCategorias";
 import CategoriaSmartphone from "../../src/components/CategoriaSmartphone";
+import CategoriaLaptop from "../../src/components/CategoriaLaptop";
+import CategoriaDesktops from "../../src/components/CategoriaDesktops";
+import CategoriaGpus from "../../src/components/CategoriaGpus";
+import CategoriaDisplays from "../../src/components/CategoriaDisplays";
+import CategoriaSmartwatches from "../../src/components/CategoriaSmartwatches";
 
 export default function Home() {
   const { user } = useAuth();
   const router = useRouter();
-  const [categoriaSelecionada, setCategoriaSelecionada] = useState<string | null>(null);
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState<
+    string | null
+  >(null);
 
   useEffect(() => {
     if (!user) {
@@ -48,29 +61,63 @@ export default function Home() {
               </>
             )}
 
-            {/* Se clicou na categoria Smartphones */}
             {categoriaSelecionada === "Smartphones" && (
               <>
                 <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
-                  <Text style={{ color: "blue", marginBottom: 8 }}>← Voltar</Text>
+                  <Text className="text-blue-700  mb-8">← Voltar</Text>
                 </TouchableOpacity>
                 <Text className="text-xl font-bold mb-4">Smartphones</Text>
                 <CategoriaSmartphone />
               </>
             )}
 
-            {/* Exemplo futuro: outras categorias */}
-            {categoriaSelecionada !== null &&
-              categoriaSelecionada !== "Smartphones" && (
-                <>
-                  <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
-                    <Text style={{ color: "blue", marginBottom: 8 }}>← Voltar</Text>
-                  </TouchableOpacity>
-                  <Text className="text-xl font-bold mb-4">
-                    Em breve: {categoriaSelecionada}
-                  </Text>
-                </>
-              )}
+            {categoriaSelecionada === "Laptops" && (
+              <>
+                <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
+                  <Text className="text-blue-700  mb-8">← Voltar</Text>
+                </TouchableOpacity>
+                <Text className="text-xl font-bold mb-4">Laptops</Text>
+                <CategoriaLaptop />
+              </>
+            )}
+
+            {categoriaSelecionada === "Desktops" && (
+              <>
+                <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
+                  <Text className="text-blue-700  mb-8">← Voltar</Text>
+                </TouchableOpacity>
+                <Text className="text-xl font-bold mb-4">Desktops</Text>
+                <CategoriaDesktops />
+              </>
+            )}
+
+            {categoriaSelecionada === "GPUs" && (
+              <>
+                <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
+                  <Text className="text-blue-700  mb-8">← Voltar</Text>
+                </TouchableOpacity>
+                <Text className="text-xl font-bold mb-4">GPUs</Text>
+                <CategoriaGpus />
+              </>
+            )}
+            {categoriaSelecionada === "Displays" && (
+              <>
+                <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
+                  <Text className="text-blue-700  mb-8">← Voltar</Text>
+                </TouchableOpacity>
+                <Text className="text-xl font-bold mb-4">Displays</Text>
+                <CategoriaDisplays />
+              </>
+            )}
+            {categoriaSelecionada === "Smartwatches" && (
+              <>
+                <TouchableOpacity onPress={() => setCategoriaSelecionada(null)}>
+                  <Text className="text-blue-700  mb-8">← Voltar</Text>
+                </TouchableOpacity>
+                <Text className="text-xl font-bold mb-4">Smartwatches</Text>
+                <CategoriaSmartwatches />
+              </>
+            )}
           </ScrollView>
         </View>
       </View>
