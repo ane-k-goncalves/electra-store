@@ -5,7 +5,7 @@ import "../global.css";
 import { AuthProvider } from "../src/contexts/AuthContext";
 import { Icon } from "@rneui/base";
 import { FavoritesProvider } from "../src/contexts/FavoriteContext";
-import Header from "../src/components/Header";
+import Header from "../src/components/header";
 import CarrinhoProvider from "../src/contexts/CarrinhoContext";
 
 

@@ -1,7 +1,7 @@
 import { View, Text, TextInput, Button, Alert, Pressable } from "react-native";
 import React, { useState } from "react";
 import { useRouter } from "expo-router";
-import { handleError } from "vue";
+
 import { useAuth } from "../src/contexts/AuthContext";
 
 export default function login() {
