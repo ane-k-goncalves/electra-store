@@ -9,8 +9,8 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "../../src/contexts/AuthContext";
 import { useRouter } from "expo-router";
 import { Divider } from "@rneui/themed";
-import CardProdutos from "../../src/components/CardProdutos";
-import CardCategorias from "../../src/components/CardCategorias";
+import CardProdutos from "../../src/components/cardProdutos";
+import CardCategorias from "../../src/components/cardCategorias"
 import CategoriaSmartphone from "../../src/components/CategoriaSmartphone";
 import CategoriaLaptop from "../../src/components/CategoriaLaptop";
 import CategoriaDesktops from "../../src/components/CategoriaDesktops";

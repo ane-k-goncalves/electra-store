@@ -2,7 +2,6 @@ import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
 import { useFavorites } from "../../src/contexts/FavoriteContext";
 
-import CardProdutos from "../../src/components/CardProdutos";
 import { Card, Icon } from "@rneui/base";
 import { useCarrinho } from "../../src/contexts/CarrinhoContext";
 
